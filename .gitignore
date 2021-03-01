@@ -3,3 +3,5 @@ src/DjangoProject/__pycache__/
 Pipfile.lock
 Pipfile.lock
 Pipfile.lock
+src/blog/__pycache__/
+src/blog/migrations
