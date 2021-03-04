@@ -28,6 +28,8 @@ from .views import (
     contact_us
 )
 
+from django.conf.urls import url, include
+
 urlpatterns = [
     path('', home_page),
     path('about-us', about_us),
@@ -36,5 +38,6 @@ urlpatterns = [
     path('blog/<int:person_id>', person_detail),
     path('blog/person', create_person),
     path('blog/delete/person/<int:person_id>', delete_person),
-    path('blog/update/person/<int:person_id>', update_person)
+    path('blog/update/person/<int:person_id>', update_person),
+    url(r'^', include('testapp.urls'))
 ]

@@ -5,3 +5,5 @@ Pipfile.lock
 Pipfile.lock
 src/blog/__pycache__/
 src/blog/migrations
+src/testapp/__pycache__/
+src/testapp/migrations/__pycache__/
