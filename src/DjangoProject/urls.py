@@ -31,14 +31,15 @@ from .views import (
 from django.conf.urls import url, include
 
 urlpatterns = [
-    path('', home_page),
-    path('about-us', about_us),
-    path('contact-us', contact_us),
-    # path('admin/', admin.site.urls),
-    path('blog/<int:person_id>', person_detail),
-    path('blog/person', create_person),
-    path('blog/delete/person/<int:person_id>', delete_person),
-    path('blog/update/person/<int:person_id>', update_person),
-    url('auth/', include('testapp.urls')),
+    # path('', home_page),
+    # path('about-us', about_us),
+    # path('contact-us', contact_us),
+    path('admin/', admin.site.urls),
+    # path('blog/<int:person_id>', person_detail),
+    # path('blog/person', create_person),
+    # path('blog/delete/person/<int:person_id>', delete_person),
+    # path('blog/update/person/<int:person_id>', update_person),
+    # url('auth/', include('testapp.urls')),
     # url(r'^auth/', include('testapp.urls'))
+    path('', include('accounts.urls'))
 ]
